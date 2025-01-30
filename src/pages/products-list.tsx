@@ -75,7 +75,7 @@ const ProductListView = ({products}:{products:Product[]}) => {
           <Grid item key={product.id} xs={12} sm={6} md={4} lg={3} sx={{ display: 'flex', justifyContent: 'center' }}>
             <ProductCard imageURL={product?.images?.[0] ?? product?.images?.[1] ?? product?.images?.[2]} title={product.title} description={product.description} id={product.id} />
           </Grid>
-        )) : <h2>No Products Found</h2>}
+        )) : <Box textAlign={'center'} marginY={'5rem'} width={'100%'}><h2>No Products Found</h2></Box>}
       </Grid>
     </>
   );
